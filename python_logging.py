@@ -38,5 +38,6 @@ logging.critical('This is a critical message')
 #Logging Variable Data
 name = 'Goran'
 logging.error('%s raised an error', name)
+logging.error('{} raised an error' .format(name))
 
 
