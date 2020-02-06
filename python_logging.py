@@ -60,3 +60,11 @@ try:
   c = a / b
 except:
   logging.error("Exception occurred", exc_info=True)
+
+
+a = 5
+b = 0
+try:
+  c = a / b
+except:
+  logging.exception("Exception occurred")
