@@ -43,6 +43,7 @@ logging.error('{} raised an error' .format(name))
 '''
 
 #Capturing Stack Traces
+'''
 a = 5
 b = 0
 
@@ -50,5 +51,12 @@ try:
   c = a / b
 except Exception as e:
   logging.error("Exception occurred", exc_info=True)
+'''
 
+a = 5
+b = 0
 
+try:
+  c = a / b
+except:
+  logging.error("Exception occurred", exc_info=True)
