@@ -36,8 +36,19 @@ logging.critical('This is a critical message')
 #logging.warning('Admin logged out')
 
 #Logging Variable Data
+'''
 name = 'Goran'
 logging.error('%s raised an error', name)
 logging.error('{} raised an error' .format(name))
+'''
+
+#Capturing Stack Traces
+a = 5
+b = 0
+
+try:
+  c = a / b
+except Exception as e:
+  logging.error("Exception occurred", exc_info=True)
 
 
