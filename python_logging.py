@@ -24,5 +24,11 @@ logging.critical('This is a critical message')
 
 
 #Formatting the Output
-logging.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
-logging.warning('This is a Warning')
+#logging.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
+#logging.warning('This is a Warning')
+
+
+logging.basicConfig(format='%(asctime)s - %(message)s', level=logging.INFO)
+logging.info('Admin logged in')
+
+
