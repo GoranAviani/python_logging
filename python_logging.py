@@ -19,5 +19,10 @@ logging.critical('This is a critical message')
 '''
 
 #basic logging to a file
-logging.basicConfig(filename='logging_file.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
-logging.warning('This will get logged to a file')
+#logging.basicConfig(filename='logging_file.log', filemode='w', format='%(name)s - %(levelname)s - %(message)s')
+#logging.warning('This will get logged to a file')
+
+
+#Formatting the Output
+logging.basicConfig(format='%(process)d-%(levelname)s-%(message)s')
+logging.warning('This is a Warning')
