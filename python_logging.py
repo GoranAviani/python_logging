@@ -32,7 +32,11 @@ logging.critical('This is a critical message')
 #logging.info('Admin logged in')
 
 #custom date and time format
-logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
-logging.warning('Admin logged out')
+#logging.basicConfig(format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S')
+#logging.warning('Admin logged out')
+
+#Logging Variable Data
+name = 'Goran'
+logging.error('%s raised an error', name)
 
 
